@@ -11,7 +11,7 @@ A clean, responsive three-page website built with semantic HTML5, modern CSS3, a
 - **Features:** Responsive layout, accessible navigation, mobile menu toggle, contact form UX, neutral color theme
 - **Use case:** Portfolio/resume website suitable for course submission and live deployment
 
----
+
 
 ## Live link
 
@@ -108,17 +108,17 @@ To change colors, edit the variables in `:root`:
 
 Choose one of the following:
 
-- **GitHub Pages**
+**GitHub Pages**
   1. Push the project to a GitHub repository.
   2. In Repo Settings → Pages, set source to “Deploy from a branch” (main, root).
   3. Wait for the site to go live at `https://<username>.github.io/<repo>/`.
 
-- **Netlify**
+**Netlify**
   1. Drag-and-drop the project folder (or connect the repo) in Netlify.
   2. Netlify auto-deploys and provides a live HTTPS URL.
   3. Optionally set a custom domain.
 
-- **Vercel**
+**Vercel**
   1. Import the GitHub repo into Vercel.
   2. Framework preset: “Other”; no build command needed.
   3. Deploy for an instant HTTPS URL and preview deployments.
@@ -138,5 +138,6 @@ Choose one of the following:
 
 - Content: © Geoffrey Okwach Ominde.
 - Code: You may reuse and adapt for educational purposes. If publishing publicly, retain attribution or add your own.
+
 
 
