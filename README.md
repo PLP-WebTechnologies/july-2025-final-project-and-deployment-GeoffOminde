@@ -34,6 +34,11 @@ multipage-website/
 │
 └── README.md # Project documentation
 
+## Live link
+
+- Add once deployed (e.g., GitHub Pages, Netlify, or Vercel):
+  - https://geoffominde.github.io/july-2025-final-project-and-deployment-GeoffOminde/
+
 
 ## 🖥️ Pages Overview
 - **Home (`index.html`)**  
