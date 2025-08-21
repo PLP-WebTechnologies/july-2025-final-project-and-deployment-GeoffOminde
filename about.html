@@ -2,93 +2,84 @@
 <html lang="en">
 <head>
   <meta charset="utf-8" />
+  <title>About — Acme Studio</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>About — Geoffrey Ominde</title>
-  <meta name="description" content="About Geoffrey Ominde, MEL professional with 4+ years of experience across NGOs and private sector." />
-  <link rel="stylesheet" href="assets/css/style.css" />
+  <meta name="description" content="Learn about our team, mission and approach to building purposeful websites." />
+  <link rel="stylesheet" href="assets/css/styles.css" />
 </head>
 <body>
+  <a class="skip-link" href="#main">Skip to content</a>
   <header class="site-header">
-    <nav class="container nav" aria-label="Main">
-      <a class="logo" href="index.html">Geoffrey Ominde</a>
-      <button class="nav-toggle" aria-expanded="false" aria-controls="navlinks" aria-label="Toggle navigation">
-        <span aria-hidden="true"></span>
+    <div class="container">
+      <a class="logo" href="index.html">Acme<span>Studio</span></a>
+      <button class="nav-toggle" aria-expanded="false" aria-controls="site-nav" aria-label="Toggle navigation">
+        <span></span><span></span><span></span>
       </button>
-      <ul id="navlinks" class="nav-links">
-        <li><a href="index.html">Home</a></li>
-        <li><a class="active" href="about.html">About</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
-    </nav>
+      <nav id="site-nav" class="site-nav" aria-label="Primary">
+        <ul>
+          <li><a href="index.html" data-nav="home">Home</a></li>
+          <li><a href="about.html" data-nav="about">About</a></li>
+          <li><a href="services.html" data-nav="services">Services</a></li>
+          <li><a href="portfolio.html" data-nav="portfolio">Portfolio</a></li>
+          <li><a href="blog.html" data-nav="blog">Blog</a></li>
+          <li><a class="btn btn-small" href="contact.html" data-nav="contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
   </header>
 
-  <main class="container readable">
-    <section class="section">
-      <h1>About me</h1>
-      <p>I help organizations track progress, measure impact, and make better decisions using data. Over the past 4+ years, I’ve worked across non‑profits, private sector, and community organizations—building MEL systems, simplifying analysis, and turning insights into action.</p>
+  <main id="main">
+    <section class="page-hero">
+      <div class="container">
+        <h1>About Us</h1>
+        <p>We blend strategy, design, and engineering to ship websites that perform.</p>
+      </div>
     </section>
 
     <section class="section">
-      <h2>Core competencies</h2>
-      <ul class="list">
-        <li>Monitoring & Evaluation (M&E)</li>
-        <li>Quantitative & qualitative data collection</li>
-        <li>Indicator development & performance tracking</li>
-        <li>Project monitoring & learning</li>
-        <li>Report writing & data storytelling</li>
-        <li>Stakeholder & partner engagement</li>
-        <li>Data cleaning & quality assurance</li>
-        <li>CRM & office systems (Windows, Linux, macOS)</li>
-        <li>Consultancy & advisory services</li>
-      </ul>
+      <div class="container grid-2">
+        <div>
+          <h2>Mission & Vision</h2>
+          <p>Our mission is to help teams communicate clearly and convert confidently. We envision a web where speed, accessibility, and craft are the default.</p>
+          <ul class="checklist">
+            <li>Accessibility-first approach (WCAG-aware)</li>
+            <li>Performance budgets baked into builds</li>
+            <li>Content design that respects attention</li>
+          </ul>
+        </div>
+        <div>
+          <img src="https://picsum.photos/seed/team/640/420" alt="Our team collaborating" loading="lazy" />
+        </div>
+      </div>
     </section>
 
-    <section class="section">
-      <h2>Experience highlights</h2>
-
-
-      <article class="card">
-        <h3>Independent Consultant — Monitoring & Evaluation <span class="kicker">Jun 2022 – Present</span></h3>
-        <ul class="list">
-          <li>Set up and strengthened MEL systems for NGOs and CBOs</li>
-          <li>Conducted evaluations in education, health, and youth development</li>
-          <li>Developed indicator frameworks and trained teams</li>
-          <li>Created data‑driven reports and presentations</li>
-          <li>Supported results‑based reporting and learning</li>
-        </ul>
-      </article>
-
-    <section class="section">
-      <h2>Education</h2>
-      <ul class="list">
-        <li>BSc Mathematics & Computer Science — JKUAT,</li> 
-      </ul>
-    </section>
-
-    <section class="section">
-      <h2>Technical skills</h2>
-      <ul class="list">
-        <li>Microsoft Office (Excel, Word, PowerPoint); Google Workspace (Docs, Sheets, Forms, Drive)</li>
-        <li>SPSS, Kobo Toolbox, ODK</li>
-        <li>SQL & database management</li>
-        <li>Power BI & data visualization</li>
-        <li>Basic Python for data analysis</li>
-        <li>IT troubleshooting & hardware support</li>
-        <li>English & Swahili — Fluent</li>
-      </ul>
-    </section>
-
-    <section class="section">
-      <h2>Beyond work</h2>
-      <p>I bring teamwork, discipline, and composure from the pitch to every engagement.</p>
+    <section class="section alt">
+      <div class="container">
+        <h2>Our Team</h2>
+        <div class="grid-3 cards-people">
+          <article class="card person">
+            <img src="https://picsum.photos/seed/alex/400/400" alt="Alex, Design Lead" loading="lazy" />
+            <h3>Alex Kim</h3><p>Design Lead</p>
+          </article>
+          <article class="card person">
+            <img src="https://picsum.photos/seed/jordan/400/400" alt="Jordan, Engineering Lead" loading="lazy" />
+            <h3>Jordan Lee</h3><p>Engineering Lead</p>
+          </article>
+          <article class="card person">
+            <img src="https://picsum.photos/seed/sam/400/400" alt="Sam, Content Strategist" loading="lazy" />
+            <h3>Sam Patel</h3><p>Content Strategist</p>
+          </article>
+        </div>
+      </div>
     </section>
   </main>
 
   <footer class="site-footer">
-    <div class="container">
-      <small>© <span id="year"></span> Geoffrey O. Ominde. All rights reserved.</small>
+    <div class="container footer-bottom">
+      <small>&copy; <span id="year"></span> Acme Studio.</small>
     </div>
   </footer>
-  <script src="assets/js/main.js"></script>
+
+  <script src="assets/js/main.js" defer></script>
 </body>
 </html>

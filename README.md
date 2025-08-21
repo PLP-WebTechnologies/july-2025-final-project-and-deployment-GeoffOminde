@@ -1,143 +1,100 @@
-# Geoffrey Ominde — Personal Website
+# Multipage Business Website
 
-A clean, responsive three-page website built with semantic HTML5, modern CSS3, and a touch of vanilla JavaScript. The site presents Geoffrey Ominde’s professional profile as a Monitoring, Evaluation, and Learning (MEL) specialist based in Nakuru, Kenya.
-
-
-
-## Overview
-
-- **Pages:** Home, About, Contact
-- **Tech:** HTML5, CSS3, JavaScript (no frameworks)
-- **Features:** Responsive layout, accessible navigation, mobile menu toggle, contact form UX, neutral color theme
-- **Use case:** Portfolio/resume website suitable for course submission and live deployment
+This project is a **fully responsive multipage website** built using **HTML, CSS, and JavaScript**.  
+It provides a clean and professional layout that can be customized for **business, portfolio, or personal branding** purposes.
 
 
 
-## Live link
-
-- Add once deployed (e.g., GitHub Pages, Netlify, or Vercel):
-  - https://geoffominde.github.io/july-2025-final-project-and-deployment-GeoffOminde/
-
----
-
-## Project structure
-
-```
-ominde-site/
-├─ index.html              # Home: headline, tagline, quick competencies
-├─ about.html              # About & detailed experience, education, skills
-├─ contact.html            # Contact details + message form
-├─ assets/
-│  ├─ css/
-│  │  └─ style.css         # Global styles, variables, responsive rules
-│  ├─ js/
-│  │  └─ main.js           # Footer year, mobile nav toggle, form UX
-│  └─ images/
-│     └─ headshot.jpg      # Profile image (replace with your own)
-└─ README.md
+## 🚀 Features
+- Responsive design (works on mobile, tablet, desktop).
+- Multipage structure with consistent navigation and footer.
+- Sections for services, portfolio/projects, blog, and contact.
+- Placeholder content and images for easy customization.
+- Smooth scrolling and simple JavaScript interactivity.
 
 
+## 📂 Project Structure
+
+multipage-website/
+│
+├── index.html # Homepage
+├── about.html # About page
+├── services.html # Services page
+├── portfolio.html # Portfolio/Projects page
+├── blog.html # Blog/Articles page
+├── contact.html # Contact page
+│
+├── css/
+│ └── style.css # Main stylesheet
+│
+├── js/
+│ └── script.js # JavaScript for interactivity
+│
+├── images/ # Placeholder images (replace with your own)
+│
+└── README.md # Project documentation
 
 
-## Page details
+## 🖥️ Pages Overview
+- **Home (`index.html`)**  
+  Hero section, call-to-action, featured highlights.  
 
-### Home (index.html)
-- **Header:** Sticky navigation with site title and links to all pages.
-- **Hero section:** Name, tagline, location, email, phone, and CTAs. Includes a circular profile image displayed beside the headline; stacks on mobile.
-- **Highlights:** Three cards outlining MEL systems, analysis/storytelling, and partnerships.
+- **About (`about.html`)**  
+  Business/Personal story, values, mission statement.  
 
-### About (about.html)
-- **Summary:** Brief biography and approach.
-- **Core competencies:** Bullet list of key MEL skills and methods.
-- **Experience:** Role-by-role highlights 
-- **Education and skills:** Academic background, tools, languages.
-- **Beyond work:** Personal note on teamwork.
+- **Services (`services.html`)**  
+  List of services with descriptions.  
 
-### Contact (contact.html)
-- **Contact details:** Email, phone, location, P.O. Box.
-- **Form:** Name, email, message with basic validation/UX via JavaScript. Mailto fallback opens the default email client.
+- **Portfolio (`portfolio.html`)**  
+  Grid of sample projects with images and titles.  
 
+- **Blog (`blog.html`)**  
+  Example posts/articles (placeholder).  
 
-
-## Styling and responsiveness (assets/css/style.css)
-
-- **CSS variables:** Centralized color palette, spacing, radius, and container width.
-- **Layout:** Mobile-first design with fluid spacing, grid utilities, and readable line lengths.
-- **Components:** Cards, buttons, focus-visible states, and accessible color contrast.
-- **Responsive nav:** Converts to a toggleable menu under 720px.
-- **Hero image layout:** Two-column grid for image + text; collapses to single-column on small screens.
-
-To change colors, edit the variables in `:root`:
-```css
-:root{
-  --bg: #f5f5f5;
-  --surface: #ffffff;
-  --text: #222222;
-  --muted: #555555;
-  --accent: #0077cc;
-  --accent-dark: #005fa3;
-  --ring: #cce4f7;
-  --radius: 12px;
-  --space-1: 0.5rem;
-  --space-2: 1rem;
-  --space-3: 1.5rem;
-  --space-4: 2rem;
-  --maxw: 1100px;
-}
+- **Contact (`contact.html`)**  
+  Contact form + contact details (non-functional by default).  
 
 
 
+## 🎨 Customization
+1. **Content**:  
+   Replace placeholder text (`Lorem ipsum...`) with your real content.  
 
-## Interactivity (assets/js/main.js)
+2. **Images**:  
+   Put your images in the `/images/` folder and update `<img src="images/...">` paths.  
 
-- **Footer year:** Auto-updates the copyright.
-- **Mobile nav toggle:** ARIA-enabled button toggles the menu on small screens.
-- **Contact form UX:** Validates required fields and opens a mailto link as a simple submission fallback.
+3. **Branding**:  
+   Update the site name/logo in the **navigation bar** and **footer**.  
 
-
-
-## How to run locally
-
-1. Download or clone the repository.
-2. Open `index.html` in your browser (no build step needed).
-3. Replace `assets/images/headshot.jpg` with your own image if desired.
+4. **Colors & Fonts**:  
+   Modify `css/style.css` to match your brand identity.  
 
 
 
-## Deployment
+## ⚙️ Running the Website
+Since this is a **static website**, you don’t need a server:  
+- Simply open `index.html` in your browser.  
+- Or run a local server for testing:
+  ```bash
+  # Using Python 3
+  python -m http.server 8000
+Then visit http://localhost:8000
+.
 
-Choose one of the following:
+📌 Future Enhancements
 
-**GitHub Pages**
-  1. Push the project to a GitHub repository.
-  2. In Repo Settings → Pages, set source to “Deploy from a branch” (main, root).
-  3. Wait for the site to go live at `https://<username>.github.io/<repo>/`.
+Add backend (Node.js, PHP, Laravel, etc.) for contact form submissions.
 
-**Netlify**
-  1. Drag-and-drop the project folder (or connect the repo) in Netlify.
-  2. Netlify auto-deploys and provides a live HTTPS URL.
-  3. Optionally set a custom domain.
+Convert blog to a dynamic CMS (WordPress, Ghost, or custom).
 
-**Vercel**
-  1. Import the GitHub repo into Vercel.
-  2. Framework preset: “Other”; no build command needed.
-  3. Deploy for an instant HTTPS URL and preview deployments.
+Add animations (using libraries like GSAP or AOS).
 
+Deploy to hosting platforms like Netlify, GitHub Pages, or Vercel.
 
+📄 License
 
-## Accessibility notes
-
-- Semantic landmarks: header, nav, main, footer.
-- Descriptive link text and alt text for the headshot image.
-- Visible focus styles and adequate color contrast.
-- ARIA attributes on the mobile nav toggle and form status messaging.
+This project is free to use and modify for personal or commercial projects.
+Attribution is appreciated but not required.
 
 
-
-## Credits and license
-
-- Content: © Geoffrey Okwach Ominde.
-- Code: You may reuse and adapt for educational purposes. If publishing publicly, retain attribution or add your own.
-
-
-
+Would you like me to also create a **basic `images/` set with placeholders + favicon** so your website loads without any missing assets when you copy-paste?
