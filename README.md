@@ -102,4 +102,5 @@ This project is free to use and modify for personal or commercial projects.
 Attribution is appreciated but not required.
 
 
-Would you like me to also create a **basic `images/` set with placeholders + favicon** so your website loads without any missing assets when you copy-paste?
+
+
